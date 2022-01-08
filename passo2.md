@@ -2,10 +2,4 @@
 
 <h1>Meu primeiro teste!</h1>
 <br>
-Seria isso um programa? 
-
-<script>
-
-alert ("Isso sim é um programa!");
-
-</script>
+Seria isso um programa? Descubra visitando o Alura <a href="https://www.alura.com.br/"> aqui</a>!
