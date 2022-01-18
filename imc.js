@@ -1,4 +1,3 @@
-<title>Cálculo IMC</title>
 
 <b>Tabela IMC <b> 
 
