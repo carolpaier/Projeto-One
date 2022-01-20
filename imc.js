@@ -1,3 +1,6 @@
+<meta charset="UTF-8">
+
+<title>Cálculo IMC</title>
 
 <b>Tabela IMC <b> 
 
@@ -20,15 +23,31 @@ pulaLinha ( );
 }
 
 function calculaImc(altura, peso) {
-var imc = peso / (altura*altura);
-mostra (nome + " seu IMC é " + Math.round (imc));
+return peso / (altura *altura);
 
 }
 
 var nome = prompt ("Por favor informe seu nome")
-var altura = prompt (nome + " informe a sua altura:")
-var peso = prompt (nome + " informe o seu peso:")
+var alturaInformada = prompt (nome + " informe a sua altura:")
+var pesoInformado = prompt (nome + " informe o seu peso:")
+var imc = calculaImc(alturaInformada, pesoInformado);
 
-calculaImc(altura, peso);
+mostra (nome + " seu IMC é " + Math.round (imc));
+
+if(imc < 18.5) {
+mostra(nome + " você está abaixo do peso ideal");
+}
+
+if(imc >= 18.5 && imc <= 24.9) {
+mostra(nome + " você está com peso normal");
+}
+
+if (imc >= 25 && imc <= 29.9) {
+mostra(nome + " você está com sobrepeso");
+}
+
+if (imc >= 30) {
+mostra(nome + " você está com obesidade");
+}
 
 </script>
